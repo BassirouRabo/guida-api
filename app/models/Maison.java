@@ -17,6 +17,9 @@ public class Maison {
     private String prix;
     private String description;
     private String image;
+    private Double latitude;
+    private Double longitude;
+    private Long telephone;
 
     /**
      * Constructeur avec arguments
@@ -26,14 +29,20 @@ public class Maison {
      * @param prix
      * @param description
      * @param image
+     * @param latitude
+     * @param longitude
+     * @param telephone
      */
-    public Maison(String ville, String quartier, String type, String prix, String description, String image) {
+    public Maison(String ville, String quartier, String type, String prix, String description, String image, Double latitude, Double longitude, Long telephone) {
         this.ville = ville;
         this.quartier = quartier;
         this.type = type;
         this.prix = prix;
         this.description = description;
         this.image = image;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.telephone = telephone;
     }
 
     /**
@@ -109,5 +118,29 @@ public class Maison {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
+
+    public Double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
+    }
+
+    public Long getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(Long telephone) {
+        this.telephone = telephone;
     }
 }
