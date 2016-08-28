@@ -14,4 +14,5 @@ libraryDependencies ++= Seq(
   "org.hibernate" % "hibernate-entitymanager" % "5.1.0.Final",
   "org.postgresql" % "postgresql" % "9.4-1201-jdbc41"
 )
+routesGenerator := InjectedRoutesGenerator
 PlayKeys.externalizeResources := false
